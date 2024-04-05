@@ -32,7 +32,7 @@ const engines = {
   google: {
     url: {
       target:
-        'https://www.google.com/searchbyimage?sbisrc=cr_1_5_2&image_url={imgUrl}'
+        'https://lens.google.com/uploadbyurl?url={imgUrl}'
     },
     image: {
       target: searchUrl,

@@ -249,7 +249,7 @@ async function searchGoogle({session, search, image} = {}) {
   } else if (image.imageUrl) {
     // fall back to searching with image URL
     tabUrl =
-      'https:www.google.com/searchbyimage?sbisrc=cr_1_5_2&image_url=' +
+      'https://lens.google.com/uploadbyurl?url=' +
       encodeURIComponent(image.imageUrl);
   } else {
     throw new Error(`API response: ${rsp.status}, ${await rsp.text()}`);
